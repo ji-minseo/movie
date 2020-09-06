@@ -4,8 +4,14 @@ import Cmp from './Cmp';
 function App() {
   return (
     <div className="App">
-      HIHI APP
-      <Cmp />
+      Who are ITZY?
+      <ul>
+        <Cmp name="ryujin" />
+        <Cmp name="yuna" />
+        <Cmp name="lia" />
+        <Cmp name="yeji" />
+        <Cmp name="chaeryong" />
+      </ul>
     </div>
   );
 }
