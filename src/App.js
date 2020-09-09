@@ -1,17 +1,13 @@
 import React from 'react';
 import Cmp from './Cmp';
 
+const blackpink = [{ name: "jennie", img: "link" }, { name: "jisoo", img: "link" }];
+
 function App() {
   return (
     <div className="App">
       Who are ITZY?
-      <ul>
-        <Cmp name="ryujin" />
-        <Cmp name="yuna" />
-        <Cmp name="lia" />
-        <Cmp name="yeji" />
-        <Cmp name="chaeryong" />
-      </ul>
+      {blackpink.map(member => <Cmp name={member.name} img={member.img} />)}
     </div>
   );
 }
