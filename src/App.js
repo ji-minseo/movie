@@ -2,6 +2,8 @@ import React from 'react';
 import Cmp from './Cmp';
 import Axios from "axios";
 import Movie from './Movie';
+import "./Style.css"
+import "./Fonts.css"
 
 
 const blackpink = [{ name: "jennie", img: "link" }, { name: "jisoo", img: "link" }];
@@ -25,7 +27,7 @@ class App extends React.Component {
 
   render() {
     const {isLoading, movies} = this.state;
-    return (<div className="App">
+    return (<div className="container">
       {isLoading ? "hi" : movies.map( i => <Movie title = {i.title}/>)}
     </div>);
   }

@@ -1,0 +1,16 @@
+.movies {
+    /* display: flex;
+    justify-content: space-between; */
+
+}
+h2 {
+    margin-bottom: 100px;
+    margin-right: 100px;
+}
+
+.movies__thumb {
+    width : 200px;
+    background-color: black;
+    height: 400px;
+    margin-bottom: 100px;
+}
